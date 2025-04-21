@@ -1,0 +1,11 @@
+{
+    "label": "Rendimiento (Performance)",
+    "position": 5,
+    "link": {
+      "type": "generated-index",
+      "title": "Panel de Rendimiento",
+      "description": "Aprende a usar el panel Performance de DevTools para registrar, analizar y optimizar el rendimiento de tu sitio web: timeline, FPS, throttling y más.",
+      "slug": "/performance"
+    }
+  }
+  

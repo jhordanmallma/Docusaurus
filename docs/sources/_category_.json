@@ -1,0 +1,9 @@
+{
+    "label": "Fuentes (Sources)",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "Aprende a usar el panel Sources del inspector para explorar, depurar y editar archivos del sitio web en tiempo real."
+    }
+  }
+  
