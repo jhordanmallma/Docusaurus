@@ -1,0 +1,10 @@
+{
+    "label": "Consola (Console)",
+    "link": {
+      "type": "generated-index",
+      "title": "Panel de Consola",
+      "description": "Guía completa de la Consola de DevTools: ejecutar JavaScript, usar la API de console, filtrar logs, medir tiempos y depurar errores",
+      "slug": "console"
+    }
+  }
+  
