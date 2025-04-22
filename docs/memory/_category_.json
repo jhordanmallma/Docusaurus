@@ -1,0 +1,11 @@
+{
+    "label": "Memoria (Memory)",
+    "position": 6,
+    "link": {
+      "type": "generated-index",
+      "title": "Panel de Memoria",
+      "description": "Aprende a analizar y depurar el uso de memoria en tu aplicación web usando el panel Memory de DevTools: snapshots, árboles retenidos, instrumentación de asignación y recolección de basura.",
+      "slug": "/memory"
+    }
+  }
+  

@@ -1,0 +1,10 @@
+{
+    "label": "Aplicación (Application)",
+    "link": {
+      "type": "generated-index",
+      "title": "Panel de Aplicación",
+      "description": "Guía completa sobre el manejo y almacenamiento de datos en aplicaciones web, optimización de recursos y uso de DevTools.",
+      "slug": "application"
+    }
+  }
+  
