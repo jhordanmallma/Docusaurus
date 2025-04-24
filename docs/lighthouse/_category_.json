@@ -1,0 +1,10 @@
+{
+    "label": "Lighthouse (Lighthouse)",
+    "link": {
+      "type": "generated-index",
+      "title": "Panel de Lighthouse",
+      "description": "Guía completa del panel Lighthouse en DevTools: audita rendimiento, accesibilidad, buenas prácticas, SEO y generación de informes.",
+      "slug": "lighthouse"
+    }
+  }
+  

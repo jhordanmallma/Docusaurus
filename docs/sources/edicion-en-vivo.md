@@ -20,7 +20,7 @@ Cuando inspeccionas un archivo JavaScript en el panel Sources:
 4. Presiona `Ctrl + S` (o `Cmd + S` en Mac) para aplicar los cambios.
 5. Refresca la página para ver cómo afecta tu edición.
 
-📌 Nota: los cambios son temporales y se pierden al recargar a menos que uses *Workspaces*.
+ Nota: los cambios son temporales y se pierden al recargar a menos que uses *Workspaces*.
 
 ---
 

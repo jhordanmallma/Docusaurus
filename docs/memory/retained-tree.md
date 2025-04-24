@@ -1,4 +1,8 @@
-# Árbol de Retención (Retained Tree)
+---
+id: retained-tree
+title: Árbol de Retención (Retained Tree)
+sidebar_position: 4
+---
 
 El **Retained Tree** (árbol de retención) en las herramientas de memoria de DevTools permite rastrear **qué objetos están reteniendo a otros en memoria**, y por qué **no han sido liberados por el recolector de basura**.
 
@@ -6,13 +10,13 @@ Este análisis es clave para **detectar fugas de memoria** y **referencias innec
 
 ---
 
-## 🌳 ¿Qué es el Retained Tree?
+##  ¿Qué es el Retained Tree?
 
 Cuando inspeccionas un objeto en una heap snapshot, puedes ver su **retained tree**, es decir, una jerarquía que muestra **qué objetos referencian a ese objeto**, impidiendo su liberación.
 
 ---
 
-## 🔍 ¿Dónde se encuentra?
+##  ¿Dónde se encuentra?
 
 1. Abre una snapshot en la pestaña **Memory**.
 2. Selecciona un objeto sospechoso.
@@ -22,7 +26,7 @@ Esto mostrará cómo ese objeto está siendo **retenido** por otros objetos en m
 
 ---
 
-## 🧠 ¿Por qué es útil?
+##  ¿Por qué es útil?
 
 Te ayuda a responder:
 
@@ -32,7 +36,7 @@ Te ayuda a responder:
 
 ---
 
-## 📘 Ejemplo ilustrativo
+##  Ejemplo ilustrativo
 
 ```javascript
 let ref;
@@ -46,13 +50,13 @@ iniciar();
 
 En este caso, `datos` nunca se libera porque está referenciado desde la variable global `ref`.  
 
-🔎 **Al inspeccionar `datos`, verás algo así en el Retained Tree:**  
+ **Al inspeccionar `datos`, verás algo así en el Retained Tree:**  
 
 ```pgsql
 (window) → ref → Object { nombre: "Usuario" }
 ```
 
-🧬 **Diagrama explicativo**  
+ **Diagrama explicativo**  
 
 ```mermaid
 graph TD
@@ -61,7 +65,7 @@ graph TD
 ```
  La cadena de referencias muestra claramente que window mantiene vivo al objeto.
 
-🛠️ **¿Cómo romper la cadena?**  
+ **¿Cómo romper la cadena?**  
 
 Puedes liberar el objeto eliminando referencias:  
 
@@ -72,11 +76,11 @@ ref = null;
 Después de esto, si no hay otras referencias activas, el objeto puede ser recolectado y desaparecerá del Retained Tree en la siguiente snapshot.
 
 
-### ✅ Buenas prácticas  
+###  Buenas prácticas  
 - Evita variables globales innecesarias.  
 - Asegúrate de remover listeners, intervalos y referencias circulares.  
 - Usa `WeakMap` o `WeakRef` si necesitas referencias no retenedoras.  
 
-### 📚 Recursos recomendados  
+###  Recursos recomendados  
 - **Artículo:** [Memory leaks in JavaScript (MDN)](https://developer.mozilla.org/)  
 - **DevTools Docs:** Retainers view  

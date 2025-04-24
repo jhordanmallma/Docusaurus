@@ -1,10 +1,14 @@
-# Asignación en Línea de Tiempo (Allocation Instrumentation)
+---
+id: allocation-instrumentation
+title: Asignación en Línea de Tiempo (Allocation Instrumentation)
+sidebar_position: 5
+---
 
 La herramienta **Allocation instrumentation on timeline** del panel **Memory** en DevTools permite **rastrear asignaciones de memoria en tiempo real** mientras interactúas con tu aplicación.
 
 ---
 
-## 🎯 ¿Para qué sirve?
+## ¿Para qué sirve?
 
 Esta herramienta responde preguntas como:
 
@@ -14,7 +18,7 @@ Esta herramienta responde preguntas como:
 
 ---
 
-## 🧪 ¿Cómo se usa?
+##  ¿Cómo se usa?
 
 1. Abre DevTools (`F12` o `Ctrl + Shift + I`).
 2. Ve a la pestaña **Memory**.
@@ -25,7 +29,7 @@ Esta herramienta responde preguntas como:
 
 ---
 
-## 📊 ¿Qué muestra el resultado?
+## ¿Qué muestra el resultado?
 
 Una vez grabado, verás:
 
@@ -37,7 +41,7 @@ Puedes hacer clic en un objeto para explorar su **retained tree**, ver dónde fu
 
 ---
 
-## 🧠 Ejemplo de uso
+## Ejemplo de uso
 
 Supongamos que haces clic en un botón varias veces y notas un aumento constante de memoria.
 
@@ -64,17 +68,17 @@ graph LR
 ```
 🔍 DevTools mostrará muchas instancias de objetos tipo Object y Array, indicándote si están siendo retenidos.
 
-### 🧯 ¿Cómo detectar fugas?  
+###  ¿Cómo detectar fugas?  
 - Observa objetos que se mantienen tras detener la grabación.  
 - Fíjate en los que tienen alto **retained size**.  
 - Haz clic derecho y selecciona *"Reveal in Summary view"* para investigar más a fondo.  
 
-### ✅ Buenas prácticas  
+### Buenas prácticas  
 - Usa esta herramienta mientras interactúas con la app.  
 - Realiza grabaciones **cortas y controladas**.  
 - Libera referencias manualmente para probar si los objetos desaparecen.  
 - Úsala en combinación con **heap snapshots** y **retained tree**.  
 
-### 📚 Recursos adicionales  
+### Recursos adicionales  
 - **DevTools Docs:** [Allocation instrumentation](https://developer.chrome.com/docs/devtools/)  
 - **Artículo:** [Cómo detectar fugas de memoria en tiempo real (Google)](https://developers.google.com/)  

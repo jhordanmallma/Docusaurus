@@ -1,4 +1,8 @@
-# Introducción a la pestaña Memoria (Memory)
+---
+id: introduccion
+title: Introducción a la pestaña Memoria (Memory)
+sidebar_position: 1
+---
 
 La pestaña **Memory** en DevTools permite analizar y optimizar el uso de memoria de una página web. Es una herramienta fundamental para detectar **fugas de memoria**, entender cómo se **almacenan objetos en el heap**, y ver cómo cambia el uso de memoria con el tiempo.
 
@@ -19,19 +23,19 @@ La pestaña **Memory** en DevTools permite analizar y optimizar el uso de memori
 
 Al abrir la pestaña Memory verás tres modos principales:
 
-### 1. 🧠 **Heap snapshot**
+### 1.  **Heap snapshot**
 Captura una instantánea de toda la memoria utilizada por objetos JS. Ideal para:
 - Ver todos los objetos activos.
 - Buscar objetos que no deberían seguir en memoria.
 - Detectar referencias retenidas innecesarias.
 
-### 2. ⏱️ **Allocation instrumentation on timeline**
+### 2. **Allocation instrumentation on timeline**
 Graba asignaciones de objetos con el tiempo. Ideal para:
 - Rastrear el momento exacto en que se crean objetos.
 - Ver qué código está causando asignaciones frecuentes.
 - Analizar el comportamiento de la memoria a lo largo de una sesión.
 
-### 3. 📷 **Allocation sampling**
+### 3.  **Allocation sampling**
 Toma muestras periódicas para mostrar estadísticas aproximadas del uso de memoria. Es menos preciso, pero más rápido.
 
 ---

@@ -1,4 +1,8 @@
-# Comparación de Snapshots de Memoria
+---
+id: comparacion-de-snapshots
+title: Comparación de Snapshots de Memoria
+sidebar_position: 3
+---
 
 Cuando tomas múltiples **heap snapshots**, puedes compararlos para detectar **fugas de memoria**, **objetos persistentes**, y analizar cómo cambian los objetos en el tiempo.
 
@@ -6,7 +10,7 @@ Esta comparación es clave para encontrar problemas difíciles de detectar, como
 
 ---
 
-## 📊 ¿Qué es la comparación de snapshots?
+## ¿Qué es la comparación de snapshots?
 
 Es una funcionalidad que permite ver:
 
@@ -18,7 +22,7 @@ Esto ayuda a identificar **objetos retenidos innecesariamente**.
 
 ---
 
-## 🧪 ¿Cómo hacerlo?
+## ¿Cómo hacerlo?
 
 1. Abre la pestaña **Memory**.
 2. Selecciona **Heap snapshot**.
@@ -31,7 +35,7 @@ DevTools te mostrará una vista comparativa.
 
 ---
 
-## 📈 Vista comparativa
+## Vista comparativa
 
 En la vista de comparación se muestran columnas clave:
 
@@ -46,7 +50,7 @@ En la vista de comparación se muestran columnas clave:
 
 ---
 
-## 🔥 Diagrama explicativo
+## Diagrama explicativo
 
 ```mermaid
 graph LR
@@ -58,7 +62,7 @@ graph LR
 
 ```
 
-## 🛠️ Ejemplo práctico (JS)
+##  Ejemplo práctico (JS)
 ```js
 function crearListeners() {
   const btn = document.getElementById('boton');
@@ -70,12 +74,12 @@ crearListeners();
 ```
 Si `crearListeners()` se ejecuta muchas veces sin remover los listeners previos, estos quedarán en memoria, y al comparar snapshots, los `EventListener` seguirán creciendo.
 
-✅ **Buenas prácticas**  
+ **Buenas prácticas**  
 - Toma snapshots con el botón de **garbage collection** activado (el ícono de 🗑️).  
 - Usa nombres descriptivos para objetos y clases.  
 - Compara después de interacciones específicas.  
 - Filtra por objetos con **retained size** alto o conteo creciente.  
 
-📚 **Recursos útiles**  
+**Recursos útiles**  
 - [Documentación oficial de Chrome DevTools – Memory](https://developer.chrome.com/docs/devtools/memory/)  
 - [Video explicativo de fugas de memoria (Google DevTools)](https://youtube.com/watch?v=ejV7YV_M3aE)  

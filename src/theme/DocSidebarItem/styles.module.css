@@ -1,0 +1,37 @@
+/* Ítems individuales (.md en la raíz) */
+.sidebarItem {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background-color: transparent;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  cursor: pointer;
+}
+
+.sidebarItem:hover {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+}
+
+.sidebarItemActive {
+  background-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.sidebarIcon {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  transition: color var(--transition-fast);
+}
+
+.sidebarItem:hover .sidebarIcon {
+  color: var(--color-text);
+}

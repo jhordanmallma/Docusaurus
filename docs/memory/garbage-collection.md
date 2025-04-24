@@ -1,14 +1,19 @@
-# Recolector de Basura (Garbage Collection)
+---
+id: garbage-collection
+title: Recolector de Basura (Garbage Collection)
+sidebar_position: 6
+---
+
 
 El **Garbage Collector (GC)** es un componente fundamental de los navegadores modernos. Su tarea es **liberar automáticamente la memoria** que ya no está en uso, permitiendo que las aplicaciones web sean más eficientes sin que los desarrolladores tengan que gestionar manualmente cada objeto.
 
 ---
 
-## 🧠 ¿Qué es el Garbage Collector?
+## ¿Qué es el Garbage Collector?
 
 En JavaScript, cuando creas objetos, funciones o variables, se almacenan en memoria. Si ya no son accesibles (es decir, no hay ninguna referencia a ellos), el **GC se encarga de eliminarlos**.
 
-### 🔁 Ciclo básico:
+### Ciclo básico:
 1. Se crea un objeto.
 2. Se utiliza mientras es necesario.
 3. Cuando ya no hay referencias, el GC lo detecta.
@@ -16,11 +21,11 @@ En JavaScript, cuando creas objetos, funciones o variables, se almacenan en memo
 
 ---
 
-## 🧪 ¿Cómo se relaciona con DevTools?
+##  ¿Cómo se relaciona con DevTools?
 
 En el panel **Memory** puedes forzar una recolección de basura haciendo clic en:
 
-**♻️ "Collect garbage"**
+ **Collect garbage**
 
 Esto ejecuta el GC manualmente, útil para analizar si:
 
@@ -29,7 +34,7 @@ Esto ejecuta el GC manualmente, útil para analizar si:
 
 ---
 
-## 📈 ¿Cómo detectar si el GC no está liberando algo?
+## ¿Cómo detectar si el GC no está liberando algo?
 
 Puedes comparar un **heap snapshot antes y después** de ejecutar el GC:
 
@@ -40,7 +45,7 @@ Puedes comparar un **heap snapshot antes y después** de ejecutar el GC:
 
 ---
 
-## 🧯 Código ilustrativo
+##  Código ilustrativo
 
 ```javascript
 let data = [];
@@ -57,7 +62,7 @@ function eliminar() {
 ```
 Luego de llamar a eliminar(), puedes forzar un GC y verificar si esos objetos desaparecen del heap snapshot.
 
-### 📌 Buenas prácticas  
+###  Buenas prácticas  
 - **Evita referencias innecesarias**:  
   - Elimina `EventListeners` con `.removeEventListener()`.  
   - Limpia `setInterval`/`setTimeout` con `clearInterval`/`clearTimeout`.  
@@ -67,6 +72,6 @@ Luego de llamar a eliminar(), puedes forzar un GC y verificar si esos objetos de
   - Busca nodos *"Detached"* (DOM no accesible pero en memoria).  
   - Identifica objetos *"Retained"* (retenidos por referencias ocultas).  
 
-### 📚 Recursos recomendados  
+###  Recursos recomendados  
 - [Memory Management (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)  
 - [DevTools y el Garbage Collector (Chrome Docs)](https://developer.chrome.com/docs/devtools/memory-problems/)  

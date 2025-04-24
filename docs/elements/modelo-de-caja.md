@@ -90,7 +90,7 @@ Por defecto (`content-box`), el padding y border se **suman** al width/height de
 }
 ```
 **Esto hace que:**  
-- 📌 `width` = `contenido` + `padding` + `border`  
+- `width` = `contenido` + `padding` + `border`  
 - Y facilita mucho el diseño.
 
 ## Visualízalo desde el panel de elementos

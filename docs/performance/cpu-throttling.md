@@ -23,7 +23,7 @@ El **CPU Throttling** simula dispositivos con menor potencia de procesamiento. E
    - **No throttling** (sin límite)
    - **4x slowdown** (simula una CPU 4 veces más lenta)
 
-🧪 Ahora al grabar, DevTools simulará ese entorno más restringido.
+ Ahora al grabar, DevTools simulará ese entorno más restringido.
 
 ---
 
@@ -39,7 +39,7 @@ El **CPU Throttling** simula dispositivos con menor potencia de procesamiento. E
 
 **FPS** significa **Frames Per Second** (cuadros por segundo). En el navegador, se espera que la interfaz corra a **60 FPS** para ofrecer una experiencia fluida.
 
-🔴 **Caídas por debajo de 30 FPS** pueden sentirse como lentitud o trabones ("lag").
+ **Caídas por debajo de 30 FPS** pueden sentirse como lentitud o trabones ("lag").
 
 ---
 
@@ -73,7 +73,7 @@ Supón que un usuario se queja de lentitud al hacer scroll en un listado de prod
 
 ## Consejo práctico
 
-🔧 Usa **CPU Throttling** y **FPS** en conjunto para probar tu aplicación en condiciones similares a:
+Usa **CPU Throttling** y **FPS** en conjunto para probar tu aplicación en condiciones similares a:
 
 - Celulares con pocos recursos
 - Computadoras viejas

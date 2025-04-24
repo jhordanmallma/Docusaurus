@@ -14,7 +14,7 @@ Cuando la ejecución de JavaScript se detiene por un **breakpoint**, puedes insp
 
 El **Call Stack** o pila de llamadas muestra la cadena de funciones que han sido llamadas hasta llegar a la línea actual.
 
-📌 Imagina que tienes este código:
+ Imagina que tienes este código:
 
 ```js
 function iniciar() {

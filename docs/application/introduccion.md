@@ -4,7 +4,7 @@ El panel **Application** de las DevTools de Chrome permite explorar, gestionar y
 
 ---
 
-## 🧰 ¿Qué puedes hacer desde este panel?
+## ¿Qué puedes hacer desde este panel?
 
 - Ver y editar **cookies** de una página web.
 - Inspeccionar datos almacenados en **Local Storage**, **Session Storage** o **IndexedDB**.
@@ -14,7 +14,7 @@ El panel **Application** de las DevTools de Chrome permite explorar, gestionar y
 
 ---
 
-## 📍 Ubicación del Panel
+## Ubicación del Panel
 
 1. Abre DevTools (clic derecho → **"Inspeccionar"** o `F12`).
 2. Haz clic en la pestaña **Application**.
@@ -22,7 +22,7 @@ El panel **Application** de las DevTools de Chrome permite explorar, gestionar y
 
 ---
 
-## 🗂️ Estructura General del Panel
+##  Estructura General del Panel
 
 ```plaintext
 Application
@@ -41,7 +41,7 @@ Application
 ├── Background Services
 ```
 
-### 🎯 ¿Por qué es importante?  
+###  ¿Por qué es importante?  
 - **Entender el manejo de datos**:  
   Permite analizar cómo una app gestiona información persistente del usuario (ej: tokens, preferencias).  
 - **Depuración crítica**:  
@@ -55,9 +55,9 @@ El almacenamiento web permite a las aplicaciones guardar datos directamente en e
 
 ---
 
-## 📦 Tipos de almacenamiento disponibles
+##  Tipos de almacenamiento disponibles
 
-### 🗃️ Local Storage
+###  Local Storage
 - Guarda datos **clave-valor** de forma persistente.
 - Se mantiene incluso al cerrar y reabrir el navegador.
 - Ideal para configuraciones o sesiones no sensibles.
@@ -68,7 +68,7 @@ localStorage.setItem('usuario', 'Carlos');
 ```
 
 
-### 🧭 Session Storage  
+###  Session Storage  
 - Similar al `Local Storage`, pero solo disponible durante la sesión activa.  
 - Se borra automáticamente al cerrar la pestaña o navegador. 
 
@@ -77,7 +77,7 @@ localStorage.setItem('usuario', 'Carlos');
 // Ejemplo: Guardar datos en Session Storage
 sessionStorage.setItem('tema', 'oscuro');
 ```
-### 🗃️ IndexedDB
+###  IndexedDB
 - Base de datos orientada a objetos.
 
 - Ideal para almacenar datos estructurados complejos.
@@ -89,7 +89,7 @@ sessionStorage.setItem('tema', 'oscuro');
 const request = indexedDB.open('miBaseDeDatos', 1);
 ```
 
-### 🍪 Cookies
+###  Cookies
 - Datos pequeños enviados entre el navegador y el servidor.
 
 - Pueden incluir fechas de expiración, ámbito de acceso, entre otros.
@@ -112,7 +112,7 @@ document.cookie = "token=123abc; expires=Fri, 31 Dec 2025 23:59:59 GMT";
    - Se mostrarán todas las claves y valores almacenados
 
 
-### 🧹 ¿Cómo limpiar los datos?
+###  ¿Cómo limpiar los datos?
 Puedes eliminar cualquier dato almacenado desde este mismo panel:
 
 1. **Selecciona el origen**  
@@ -125,7 +125,7 @@ Puedes eliminar cualquier dato almacenado desde este mismo panel:
 3. **Limpieza completa**  
    También puedes usar el botón **"Clear storage"** para borrar todo el almacenamiento del sitio  
 
-### 📌 Recomendaciones
+###  Recomendaciones
 - **No almacenes información sensible** en Local/Session Storage o cookies sin medidas de seguridad.
 - **Usa IndexedDB** para grandes volúmenes de datos o aplicaciones offline.
 - **Mantén tu almacenamiento organizado** con claves significativas y consistentes.

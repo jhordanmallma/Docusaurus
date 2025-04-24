@@ -11,7 +11,7 @@ El **DOM (Modelo de Objetos del Documento)** es la estructura interna que repres
 
 El DOM es una representación en forma de **árbol** del contenido HTML. Cada etiqueta es un **nodo**, y estos nodos están anidados unos dentro de otros de forma jerárquica.
 
-📌 Por ejemplo:
+ Por ejemplo:
 
 ```html
 <html>

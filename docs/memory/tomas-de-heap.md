@@ -1,4 +1,8 @@
-# Tomas de Heap (Heap Snapshots)
+---
+id: tomas-de-heap
+title: Tomas de Heap (Heap Snapshots)
+sidebar_position: 2
+---
 
 Las **tomas de heap** (Heap Snapshots) son capturas del estado actual de la memoria en tu aplicación. Te permiten ver **qué objetos están vivos**, **cuánta memoria ocupan**, y **cómo se relacionan entre sí**.
 
@@ -6,7 +10,7 @@ Esta herramienta es ideal para detectar **fugas de memoria** y analizar cómo se
 
 ---
 
-## 📸 ¿Qué es una Heap Snapshot?
+##  ¿Qué es una Heap Snapshot?
 
 Una **Heap Snapshot** es como una fotografía del montón de memoria en un momento dado. Contiene:
 - Todos los objetos actuales.
@@ -16,7 +20,7 @@ Una **Heap Snapshot** es como una fotografía del montón de memoria en un momen
 
 ---
 
-## 🧪 ¿Cómo tomar una Heap Snapshot?
+##  ¿Cómo tomar una Heap Snapshot?
 
 1. Abre DevTools (`F12` o `Ctrl + Shift + I`).
 2. Ve a la pestaña **Memory**.
@@ -27,7 +31,7 @@ Después de unos segundos, verás una tabla con información detallada del heap.
 
 ---
 
-## 🔍 ¿Cómo leer los resultados?
+##  ¿Cómo leer los resultados?
 
 - **Summary:** Vista general de los objetos y su uso de memoria.
 - **Comparison:** Compara con otras snapshots para ver qué objetos han aparecido o desaparecido.
@@ -36,7 +40,7 @@ Después de unos segundos, verás una tabla con información detallada del heap.
 
 ---
 
-## 🧠 Tip para detectar fugas
+##  Tip para detectar fugas
 
 Toma una snapshot, luego realiza alguna interacción en tu app (por ejemplo, abre y cierra un modal), y toma otra snapshot.
 
@@ -44,7 +48,7 @@ Luego, compara ambas. Si objetos creados por esa interacción **no desaparecen**
 
 ---
 
-## 🛠️ Ejemplo práctico
+##  Ejemplo práctico
 
 1. Toma una snapshot en una página en estado inicial.
 2. Ejecuta algún flujo de usuario (scroll, navegación, formularios).
@@ -55,7 +59,7 @@ Esto es muy útil para depurar apps SPA o componentes que se montan y desmontan 
 
 ---
 
-## ✅ Recomendaciones
+##  Recomendaciones
 
 - Usa nombres de clases o funciones claros para rastrear objetos.
 - Repite el proceso varias veces para confirmar resultados.

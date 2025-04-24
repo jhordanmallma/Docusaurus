@@ -1,0 +1,10 @@
+{
+    "label": "Seguridad (Security)",
+    "link": {
+      "type": "generated-index",
+      "title": "Panel de Seguridad",
+      "description": "Guía completa del panel Security en DevTools: analiza el estado de seguridad del sitio, certificados SSL/TLS, contenido mixto, políticas CSP, y cómo detectar/prevenir ataques comunes.",
+      "slug": "security"
+    }
+  }
+  

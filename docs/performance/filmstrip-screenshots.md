@@ -14,7 +14,7 @@ La pestaña **Performance** de DevTools no solo te muestra métricas de ejecuci�
 
 El **Filmstrip** es una secuencia de capturas de pantalla que se toman automáticamente mientras DevTools graba la actividad de tu sitio.
 
-🔍 **Permite identificar en qué momento visual exacto se renderiza cada parte de la página.**
+ **Permite identificar en qué momento visual exacto se renderiza cada parte de la página.**
 
 Ejemplo visual:
 

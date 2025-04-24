@@ -76,6 +76,6 @@ Los cambios hechos en DevTools son temporales (se pierden al recargar la página
 
 
 **¿Listo para editar el HTML en tiempo real?**  
-¡Sigue explorando y experimentando desde el panel de elementos! 🛠️✨
+¡Sigue explorando y experimentando desde el panel de elementos! 
 
 
