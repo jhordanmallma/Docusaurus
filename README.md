@@ -9,7 +9,6 @@ Puedes acceder al manual en línea a través del siguiente enlace:
 👉 <a href="https://912653526.facturalo.co/docusaurus/" target="_blank" rel="noopener noreferrer">Ir al manual DevTools</a>
 
 
-> **Nota:** Reemplaza la URL anterior con la dirección real de tu proyecto una vez desplegado en cPanel.
 
 ## 🚀 Instalación
 
