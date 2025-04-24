@@ -1,41 +1,68 @@
-# Website
+# 📘 Manual del Inspector de Elementos
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Este sitio web es un manual interactivo creado con [Docusaurus](https://docusaurus.io/), diseñado para facilitar el aprendizaje y uso de las herramientas de desarrollo (DevTools) en navegadores modernos. Incluye guías prácticas, glosarios, atajos de teclado y explicaciones visuales para mejorar tu experiencia como desarrollador o tester.
 
-### Installation
+## 🌐 Enlace al sitio en producción
 
+Puedes acceder al manual en línea a través del siguiente enlace:
+
+👉 [https://tudominio.com/manual-devtools](https://tudominio.com/manual-devtools)
+
+> **Nota:** Reemplaza la URL anterior con la dirección real de tu proyecto una vez desplegado en cPanel.
+
+## 🚀 Instalación
+
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 16.14 o superior).
+
+Instala las dependencias del proyecto con:
+
+```bash
+npm install
 ```
-$ yarn
-```
+## 💻 Desarrollo local
 
-### Local Development
+Inicia el servidor de desarrollo con:
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+npm start
 ```
 
-Not using SSH:
+Este comando abrirá una ventana del navegador con el sitio en modo desarrollo. Los cambios que realices se reflejarán en tiempo real sin necesidad de reiniciar el servidor.
 
+🏗️ Construcción del sitio
+Para generar el sitio estático listo para producción:
+
+```bash
+npm run build
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+El contenido generado se ubicará en la carpeta build/, listo para ser desplegado en cualquier servicio de alojamiento de contenido estático.
+
+## 🚢 Despliegue
+
+Si deseas desplegar el sitio en GitHub Pages, puedes utilizar:
+
+```bash
+GIT_USER=<tu_usuario_de_github> npm run deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Asegúrate de reemplazar <tu_usuario_de_github> con tu nombre de usuario real en GitHub.
+
+## 📂 Estructura del proyecto
+
+- `docs/`: Contiene la documentación en formato Markdown.
+- `src/pages/`: Páginas personalizadas del sitio.
+- `src/components/`: Componentes reutilizables de React.
+- `static/`: Archivos estáticos como imágenes y otros recursos.
+- `docusaurus.config.js`: Archivo de configuración principal del sitio.
+
+## ✨ Características destacadas
+
+- ✅ Basado en React y MDX para contenido interactivo.
+- 🌐 Soporte multilingüe e internacionalización.
+- 🔍 Búsqueda integrada y navegación optimizada.
+- 🧩 Personalización completa de temas y estilos.
+- 📄 Versionado de documentación y estructura modular.
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Si deseas mejorar este manual, corregir errores o añadir nuevas secciones, por favor abre un pull request o crea un issue para discutir tus ideas.
