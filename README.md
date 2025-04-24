@@ -6,7 +6,7 @@ Este sitio web es un manual interactivo creado con [Docusaurus](https://docusaur
 
 Puedes acceder al manual en línea a través del siguiente enlace:
 
-👉 [https://tudominio.com/manual-devtools](https://tudominio.com/manual-devtools)
+👉 <a href="https://912653526.facturalo.co/docusaurus/" target="_blank" rel="noopener noreferrer">https://tudominio.com/manual-devtools</a>
 
 > **Nota:** Reemplaza la URL anterior con la dirección real de tu proyecto una vez desplegado en cPanel.
 
